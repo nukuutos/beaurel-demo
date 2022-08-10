@@ -1,0 +1,19 @@
+version: "3"
+services:
+  redis:
+    image: redis
+    container_name: beaurel-redis
+    ports:
+      - "6379:6379"
+  api:
+    image: nukuutos/beaurel-api
+    container_name: beaurel-api
+    ports:
+      - "5000:5000"
+    depends_on:
+      - redis
+  client:
+    image: nukuutos/beaurel-client
+    container_name: beaurel-client
+    ports:
+      - "80:80"
