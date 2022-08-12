@@ -14,8 +14,24 @@ $ docker compose up
 
 ## Usage
 
-You can't sign up on this app. You can use fake accounts. Fake accounts in progress.
+You can't sign up on this demo. You can use fake accounts.
+
+Fake master account:
+
+```json
+"username": "master",
+"password": "123456"
+```
+
+Fake customer account:
+
+```json
+"username": "customer",
+"password": "123456"
+```
+
+If you want to search masters as guest you should set city to `Владивосток`
 
 ## Database
 
-This version of Beaurel uses **Atlas** version of Mongodb
+This demo uses **Atlas** version of Mongodb. Once a day I restore database and clean up yandex s3 bucket.
