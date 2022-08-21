@@ -32,6 +32,10 @@ Fake customer account:
 
 If you want to search masters as guest you should set city to `Владивосток`
 
+## Timezone specific
+
+This web app depends on timezones. You can get an error on booking if server detects that there's time discrepancy.
+
 ## Database
 
 This demo uses **Atlas** version of Mongodb. Once a day I restore database and clean up yandex s3 bucket.
