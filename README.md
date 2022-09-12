@@ -2,7 +2,7 @@
 
 <img src="./beaurel.png" alt="beaurel" align="right" />
 
-Beaurel is a platform for beauty-masters and their customers. For beauty-masters it allows to create a flexible timetable and services, show to customer their works. Customers can book an appointments and review masters. Beaurel has some elements of social network like messenger, favorite masters (friends), etc.
+Beaurel is a platform for beauty masters and their customers. For beauty masters, it allows creating a flexible timetable and services, showing customers their work. Customers can book appointments and review masters. Beaurel has some social network elements like messenger, favorite masters (friends), etc.
 
 ## Start up
 
@@ -32,10 +32,12 @@ Fake customer account:
 
 If you want to search masters as guest you should set city to `Владивосток`
 
-## Timezone specific
-
-This web app depends on timezones. You can get an error on booking if server detects that there's time discrepancy.
-
 ## Database
 
 This demo uses **Atlas** version of Mongodb. Once a day I restore database and clean up yandex s3 bucket.
+
+## Links
+
+Links to
+- [Client](https://github.com/nukuutos/beaurel-client)
+- [API](https://github.com/nukuutos/beaurel-api)
