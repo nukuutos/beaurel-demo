@@ -38,6 +38,5 @@ This demo uses **Atlas** version of Mongodb. Once a day I restore database and c
 
 ## Links
 
-Links to
 - [Client](https://github.com/nukuutos/beaurel-client)
 - [API](https://github.com/nukuutos/beaurel-api)
