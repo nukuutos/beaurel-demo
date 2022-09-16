@@ -1,0 +1,166 @@
+[{
+  "_id": {
+    "$oid": "62cbc69c0b4b71d5eb9c87f0"
+  },
+  "phone": "+79999999999",
+  "password": "$2a$10$8mkmfSCsvGjEs9C3FNfZue0XaJTKVknQNIcNcIZGIumydYnv/.Mcu",
+  "firstName": "Виталий",
+  "lastName": "Ванаев",
+  "masters": [],
+  "username": "master",
+  "isAvatar": false,
+  "aboutText": "",
+  "confirmation": {
+    "lastSendAt": {
+      "$date": {
+        "$numberLong": "1657521820388"
+      }
+    },
+    "isConfirmed": true,
+    "verificationCode": "QYI9",
+    "attemptsCountLeft": 4,
+    "resendCountLeft": 5
+  },
+  "resetPassword": {
+    "lastSendAt": {
+      "$date": {
+        "$numberLong": "1657944687498"
+      }
+    },
+    "verificationCode": "W9E4",
+    "attemptsCountLeft": 5,
+    "resendCountLeft": 0
+  },
+  "role": "master",
+  "city": "Владивосток",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657521820278"
+    }
+  },
+  "specialization": "Визажист",
+  "placeOfWork": {
+    "street": "Вела",
+    "house": "8",
+    "floor": "6",
+    "building": "2",
+    "room": {
+      "type": "cabinet",
+      "value": "604"
+    }
+  },
+  "tools": {
+    "isServices": false,
+    "isTimetable": false
+  },
+  "wasOnline": {
+    "$date": {
+      "$numberLong": "1660288444193"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62cca00f6c479db3f7ce7838"
+  },
+  "phone": "+79999999998",
+  "password": "$2a$10$DHW2hrr2/vymaU8wXSNQVulE5FFWriFLGOwNPTWE/zvfprz.4SE7e",
+  "firstName": "Екатерина",
+  "lastName": "Хорошая",
+  "masters": [
+    {
+      "$oid": "62f5fad9eb255b2d5073e86c"
+    }
+  ],
+  "username": "customer",
+  "isAvatar": false,
+  "aboutText": "",
+  "confirmation": {
+    "lastSendAt": {
+      "$date": {
+        "$numberLong": "1657577487753"
+      }
+    },
+    "isConfirmed": true,
+    "verificationCode": "6W3L",
+    "attemptsCountLeft": 5,
+    "resendCountLeft": 5
+  },
+  "resetPassword": {
+    "lastSendAt": null,
+    "verificationCode": null,
+    "attemptsCountLeft": 5,
+    "resendCountLeft": 5
+  },
+  "role": "customer",
+  "city": "Владивосток",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657577487644"
+    }
+  },
+  "wasOnline": {
+    "$date": {
+      "$numberLong": "1657691575611"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62f5fad9eb255b2d5073e86c"
+  },
+  "phone": "+79999999997",
+  "password": "$2a$10$8mkmfSCsvGjEs9C3FNfZue0XaJTKVknQNIcNcIZGIumydYnv/.Mcu",
+  "firstName": "Алиса",
+  "lastName": "Котова",
+  "masters": [],
+  "username": null,
+  "isAvatar": false,
+  "aboutText": "",
+  "confirmation": {
+    "lastSendAt": {
+      "$date": {
+        "$numberLong": "1657521820388"
+      }
+    },
+    "isConfirmed": true,
+    "verificationCode": "QYI9",
+    "attemptsCountLeft": 4,
+    "resendCountLeft": 5
+  },
+  "resetPassword": {
+    "lastSendAt": {
+      "$date": {
+        "$numberLong": "1657944687498"
+      }
+    },
+    "verificationCode": "W9E4",
+    "attemptsCountLeft": 5,
+    "resendCountLeft": 0
+  },
+  "role": "master",
+  "city": "Владивосток",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657521820278"
+    }
+  },
+  "specialization": "Визажист",
+  "placeOfWork": {
+    "street": "Тургеневва",
+    "house": "8",
+    "floor": "9",
+    "building": "",
+    "room": {
+      "type": "salon",
+      "value": "Насти"
+    }
+  },
+  "tools": {
+    "isServices": true,
+    "isTimetable": true
+  },
+  "wasOnline": {
+    "$date": {
+      "$numberLong": "1659697339712"
+    }
+  }
+}]

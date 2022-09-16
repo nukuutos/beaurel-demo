@@ -5,15 +5,41 @@ services:
     container_name: beaurel-redis
     ports:
       - "6379:6379"
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    env_file:
+      - .env
+    ports:
+      - "27017:27017"
+
+  mongodb-seed:
+    env_file:
+      - .env
+    build:
+      context: ./mongodb-seed
+      dockerfile: Dockerfile
+      args:
+        - DATABASE_URI=$DATABASE_URI
+        - USERNAME=$MONGO_INITDB_ROOT_USERNAME
+        - PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
+    depends_on:
+      - mongodb
+
   api:
     image: nukuutos/beaurel-api
     container_name: beaurel-api
     ports:
       - "5000:5000"
     depends_on:
+      - mongodb
       - redis
+
   client:
     image: nukuutos/beaurel-client
     container_name: beaurel-client
     ports:
       - "80:80"
+    depends_on:
+      - mongodb

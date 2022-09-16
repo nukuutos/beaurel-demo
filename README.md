@@ -6,11 +6,13 @@ Beaurel is a platform for beauty-masters and their customers. For beauty-masters
 
 ## Start up
 
-You can run this local version of Beaurel by **docker**
+1. Run this local version of Beaurel by **docker**
 
 ```console
 $ docker compose up
 ```
+
+2. Go to `localhost`
 
 ## Usage
 
@@ -35,7 +37,3 @@ If you want to search masters as guest you should set city to `Владивос�
 ## Timezone specific
 
 This web app depends on timezones. You can get an error on booking if server detects that there's time discrepancy.
-
-## Database
-
-This demo uses **Atlas** version of Mongodb. Once a day I restore database and clean up yandex s3 bucket.
